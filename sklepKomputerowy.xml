@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sklepKomputerowy>
+   
+   
+    <produkty>
+
+        <procesor idProduktu="proc01" przeznaczenie="komputer stacjonarny">
+            <producent>AMD</producent>
+            <model>Ryzen 5 2400G</model>
+            <specyfikacje>
+                <czestotliwosc rodzaj="GHz">3.6</czestotliwosc>
+                <liczbaRdzeni>4</liczbaRdzeni>
+            </specyfikacje>
+            <cena waluta="PLN">699</cena>
+        </procesor>
+
+        <procesor idProduktu="proc02" przeznaczenie="laptop">
+            <producent>Intel</producent>
+            <model>i5-9400F</model>
+            <specyfikacje>
+                <czestotliwosc rodzaj="GHz">2.9</czestotliwosc>
+                <liczbaRdzeni>6</liczbaRdzeni>
+            </specyfikacje>
+            <cena waluta="PLN">670</cena>
+        </procesor>
+
+        <procesor idProduktu="proc03" przeznaczenie="komputer stacjonarny">
+            <producent>AMD</producent>
+            <model>Ryzen 5 3600</model>
+            <specyfikacje>
+                <czestotliwosc rodzaj="GHz">3.6</czestotliwosc>
+                <liczbaRdzeni>6</liczbaRdzeni>
+            </specyfikacje>
+            <cena waluta="PLN">799</cena>
+        </procesor>
+
+        <procesor idProduktu="proc04" przeznaczenie="laptop">
+            <producent>Intel</producent>
+            <model>i7-9700K</model>
+            <specyfikacje>
+                <czestotliwosc rodzaj="GHz">3.6</czestotliwosc>
+                <liczbaRdzeni>8</liczbaRdzeni>
+            </specyfikacje>
+            <cena waluta="PLN">950</cena>
+        </procesor>
+
+        <procesor idProduktu="proc05" przeznaczenie="smartfon">
+            <producent>Qualcomm</producent>
+            <model>Snapdragon 865</model>
+            <specyfikacje>
+                <czestotliwosc rodzaj="GHz">2.84</czestotliwosc>
+                <liczbaRdzeni>8</liczbaRdzeni>
+            </specyfikacje>
+            <cena waluta="USD">579</cena>
+        </procesor>
+
+
+        <kartaGraficzna idProduktu="kgr06" przeznaczenie="komputer stacjonarny">
+            <producent>MSI</producent>
+            <model>Radeon 570</model>
+            <specyfikacje>
+                <pamiec ilosc="GB">4</pamiec>
+                <czestotliwosc rodzaj="MHz">7000</czestotliwosc>
+            </specyfikacje>
+            <cena waluta="PLN">799</cena>
+        </kartaGraficzna>
+
+        <kartaGraficzna idProduktu="kgr07" przeznaczenie="laptop">
+            <producent>Gigabyte</producent>
+            <model>Radeon RX 5700 XT</model>
+            <specyfikacje>
+                <pamiec ilosc="GB">8</pamiec>
+                <czestotliwosc rodzaj="MHz">14000</czestotliwosc>
+            </specyfikacje>
+            <cena waluta="PLN">2119</cena>
+        </kartaGraficzna>
+
+        <kartaGraficzna idProduktu="kgr08" przeznaczenie="laptop">
+            <producent>ASUS</producent>
+            <model>Dual GeForce RTX 2070</model>
+            <specyfikacje>
+                <pamiec ilosc="GB">8</pamiec>
+                <czestotliwosc rodzaj="MHz">14000</czestotliwosc>
+            </specyfikacje>
+            <cena waluta="PLN">1400</cena>
+        </kartaGraficzna>
+
+        <kartaGraficzna idProduktu="kgr09" przeznaczenie="komputer stacjonarny">
+            <producent>MSI</producent>
+            <model>GeForce RTX 2080</model>
+            <specyfikacje>
+                <pamiec ilosc="GB">8</pamiec>
+                <czestotliwosc rodzaj="MHz">15500</czestotliwosc>
+            </specyfikacje>
+            <cena waluta="PLN">2600</cena>
+        </kartaGraficzna>
+
+        <kartaGraficzna idProduktu="kgr10" przeznaczenie="komputer stacjonarny">
+            <producent>Gigabyte</producent>
+            <model>GeForce RTX 2080 Ti</model>
+            <specyfikacje>
+                <pamiec ilosc="GB">11</pamiec>
+                <czestotliwosc rodzaj="MHz">14000</czestotliwosc>
+            </specyfikacje>
+            <cena waluta="PLN">6090</cena>
+        </kartaGraficzna>
+
+
+
+        <twardyDysk idProduktu="td11" przeznaczenie="komputer stacjonarny">
+            <producent>WD</producent>
+            <model>Red</model>
+            <specyfikacje>
+                <pamiec ilosc="TB">6</pamiec>
+                <format>3.5</format>
+            </specyfikacje>
+            <cena waluta="PLN">545</cena>
+        </twardyDysk>
+
+        <twardyDysk idProduktu="td12" przeznaczenie="komputer stacjonarny">
+            <producent>Toshiba</producent>
+            <model>P300</model>
+            <specyfikacje>
+                <pamiec ilosc="TB">1</pamiec>
+                <format>3.5</format>
+            </specyfikacje>
+            <cena waluta="PLN">189</cena>
+        </twardyDysk>
+
+        <twardyDysk idProduktu="td13" przeznaczenie="komputer stacjonarny">
+            <producent>Seagate</producent>
+            <model>BarraCuda</model>
+            <specyfikacje>
+                <pamiec ilosc="TB">1</pamiec>
+                <format>3.5</format>
+            </specyfikacje>
+            <cena waluta="PLN">200</cena>
+        </twardyDysk>
+
+        <twardyDysk idProduktu="td14" przeznaczenie="laptop">
+            <producent>PNY</producent>
+            <model>CS900</model>
+            <specyfikacje>
+                <pamiec ilosc="GB">960</pamiec>
+                <format>2.5</format>
+            </specyfikacje>
+            <cena waluta="PLN">456</cena>
+        </twardyDysk>
+
+        <twardyDysk idProduktu="td15" przeznaczenie="laptop">
+            <producent>Samsung</producent>
+            <model>860 EVO</model>
+            <specyfikacje>
+                <pamiec ilosc="GB">500</pamiec>
+                <format>2.5</format>
+            </specyfikacje>
+            <cena waluta="PLN">376</cena>
+        </twardyDysk>
+    </produkty>
+
+
+
+    <zamowienia>
+         <zamowienie idZamowienia="1">
+            <zakupiony idref="proc03"/>
+            <zakupiony idref="kgr08"/>
+            <daneOsobowe>
+                <imie>Damian</imie>
+                <nazwisko>Górski</nazwisko>
+                <nrTelefonu>121231848</nrTelefonu>
+                <miasto>Gdansk</miasto>
+                <ulica>Piastowska</ulica>
+                <numerDomu>2</numerDomu>
+            </daneOsobowe>
+         </zamowienie>
+
+         <zamowienie idZamowienia="2">
+            <zakupiony idref="proc02"/>
+            <zakupiony idref="kgr09"/>
+            <daneOsobowe>
+                <imie>Bartosz</imie>
+                <nazwisko>Kaminski</nazwisko>
+                <nrTelefonu>947337274</nrTelefonu>
+                <miasto>Warszawa</miasto>
+                <ulica>Mickiewicza</ulica>
+                <numerDomu>12</numerDomu>
+            </daneOsobowe>
+         </zamowienie>
+
+         <zamowienie idZamowienia="3">
+            <zakupiony idref="proc01"/>
+            <zakupiony idref="td12"/>
+            <zakupiony idref="td13"/>
+            <daneOsobowe>
+                <imie>Mikolaj</imie>
+                <nazwisko>Narutowicz</nazwisko>
+                <nrTelefonu>472639022</nrTelefonu>
+                <miasto>Lublin</miasto>
+                <ulica>Czarna</ulica>
+                <numerDomu>115</numerDomu>
+            </daneOsobowe>
+         </zamowienie>
+
+         <zamowienie idZamowienia="4">
+            <zakupiony idref="proc05"/>
+            <daneOsobowe>
+                <imie>Tomasz</imie>
+                <nazwisko>Bartosiewicz</nazwisko>
+                <nrTelefonu>510837223</nrTelefonu>
+                <miasto>Krakow</miasto>
+                <ulica>Biala</ulica>
+                <numerDomu>15</numerDomu>
+            </daneOsobowe>
+         </zamowienie>
+
+         <zamowienie idZamowienia="5">
+            <zakupiony idref="kgr10"/>
+            <zakupiony idref="td15"/>
+            <zakupiony idref="proc02"/>
+            <daneOsobowe>
+                <imie>Marcin</imie>
+                <nazwisko>Malysz</nazwisko>
+                <nrTelefonu>566472837</nrTelefonu>
+                <miasto>Malbork</miasto>
+                <ulica>Ruda</ulica>
+                <numerDomu>44</numerDomu>
+            </daneOsobowe>
+         </zamowienie>
+
+
+    </zamowienia>
+
+
+</sklepKomputerowy>
