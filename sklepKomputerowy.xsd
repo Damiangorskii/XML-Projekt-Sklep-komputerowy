@@ -1,110 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-<!-- definition of complex elements -->
-    <xsd:element name="sklepKomputerowy">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="produkty" type="typProduktu" minOccurs="1" maxOccurs="1"/>
-                <xsd:element name="zamowienia" type="typZamowienia" minOccurs="1" maxOccurs="1"/>
-            </xsd:sequence>
-        </xsd:complexType>
 
-        <xsd:key name="idProduktu">
-            <xsd:selector xpath="./sklepKomputerowy/typProduktu"/>
-            <xsd:field xpath="@idProduktu"/>
-        </xsd:key>
-        <xsd:keyref name="idProduktuRef" refer="idProduktu">
-            <xsd:selector xpath="./sklepKomputerowy/zamowienia/idZamowienia"/>
-            <xsd:field xpath="@idref"/>
-        </xsd:keyref>
-    </xsd:element>
+<!-- definition of simple types -->
 
-    <xsd:complexType name="typProduktu">
-        <xsd:sequence>
-            <xsd:element name="procesor" minOccurs="0" maxOccurs="unbounded"/>
-            <xsd:element name="kartaGraficzna" minOccurs="0" maxOccurs="unbounded"/>
-            <xsd:element name="twardyDysk" minOccurs="0" maxOccurs="unbounded"/>
-        </xsd:sequence>
-    </xsd:complexType>
+<xsd:element name="producent">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="50"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="model">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="2"/>
+            <xsd:maxLength value="50"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="liczbaRdzeni">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="20"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="format">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:decimal">
+            <xsd:minInclusive value="1"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="imie">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"/>
+            <xsd:maxLength value="30"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="nazwisko">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"/>
+            <xsd:maxLength value="30"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="nrTelefonu">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{9}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="miasto">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"/>
+            <xsd:maxLength value="40"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="ulica">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"/>
+            <xsd:maxLength value="40"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="numerDomu">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<xsd:element name="idZakupionego">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-z][a-z][a-z]*[0-9][0-9]*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+
+<!-- definition of attributes -->
+
+<xsd:attribute name="idProduktu">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-z][a-z][a-z]*[0-9][0-9]*"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:attribute>
+
+<xsd:attribute name="idZamowienia">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="1000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:attribute>
 
 
-    <xsd:complexType name="procesor">
-        <xsd:sequence>
-            <xsd:element name="producent" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="model" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="specyfikacje" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="cena" minOccurs="0" maxOccurs="1"/>
-        </xsd:sequence>
-        <xsd:attribute name="idProduktu" use="required" />
-        <xsd:attribute name="przeznaczenie" use="required" />
-    </xsd:complexType>
+<xsd:attribute name="przeznaczenie">
+    <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="komputer stacjonarny"/>
+            <xsd:enumeration value="laptop"/>
+            <xsd:enumeration value="smartfon"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:attribute>
 
-    <xsd:complexType name="kartaGraficzna">
-        <xsd:sequence>
-            <xsd:element name="producent" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="model" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="specyfikacje" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="cena" minOccurs="0" maxOccurs="1"/>
-        </xsd:sequence>
-        <xsd:attribute name="idProduktu" use="required" />
-        <xsd:attribute name="przeznaczenie" use="required" />
-    </xsd:complexType>
-
-    <xsd:complexType name="twardyDysk">
-        <xsd:sequence>
-            <xsd:element name="producent" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="model" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="specyfikacje" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="cena" minOccurs="0" maxOccurs="1"/>
-        </xsd:sequence>
-        <xsd:attribute name="idProduktu" use="required" />
-        <xsd:attribute name="przeznaczenie" use="required" />
-    </xsd:complexType>
-
-
-
-    <xsd:complexType name="specyfikacje">
-        <xsd:sequence>
-            <xsd:element name="czestotliwosc" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="liczbaRdzeni" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="pamiec" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="format" minOccurs="0" maxOccurs="1"/>
-        </xsd:sequence>
-    </xsd:complexType>
-
-    <xsd:complexType name="typZamowienia">
-        <xsd:sequence>
-            <xsd:element name="zamowienie" minOccurs="0" maxOccurs="unbounded"/>
-        </xsd:sequence>
-    </xsd:complexType>
-
-    <xsd:complexType name="zamowienie">
-        <xsd:sequence>
-            <xsd:element name="zakupiony" minOccurs="1" maxOccurs="unbounded"/>
-            <xsd:element name="daneOsobowe" minOccurs="1" maxOccurs="1"/>
-        </xsd:sequence>
-        <xsd:attribute name="idZamowienia"/>
-    </xsd:complexType>
-
-    <xsd:complexType name="daneOsobowe">
-        <xsd:sequence>
-            <xsd:element name="imie"/>
-            <xsd:element name="nazwisko"/>
-            <xsd:element name="nrTelefonu"/>
-            <xsd:element name="miasto"/>
-            <xsd:element name="ulica"/>
-            <xsd:element name="numerDomu"/>
-        </xsd:sequence>
-    </xsd:complexType>
-
-    <!-- definition of simple types -->
-
-    <xsd:complexType name="czestotliwosc">
-        <xsd:attribute name="rodzaj" type="rodzajCzestotliwosci"/>
-    </xsd:complexType>
-
-    <xsd:simpleType name="rodzajCzestotliwosci">
+<xsd:attribute name="rodzaj">
+    <xsd:simpleType>
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="GHz"/>
             <xsd:enumeration value="MHz"/>
@@ -112,32 +138,21 @@
             <xsd:enumeration value="Hz"/>
         </xsd:restriction>
     </xsd:simpleType>
+</xsd:attribute>
 
-    <xsd:complexType name="cena">
-        <xsd:simpleContent>
-            <xsd:extension base="xsd:nonNegativeInteger">
-                <xsd:attribute name="waluta" type="rodzajWaluty"/>
-            </xsd:extension>
-        </xsd:simpleContent>
-    </xsd:complexType>
-
-    <xsd:simpleType name="rodzajWaluty">
+<xsd:attribute name="waluta">
+    <xsd:simpleType>
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="EUR"/>
             <xsd:enumeration value="PLN"/>
             <xsd:enumeration value="USD"/>
         </xsd:restriction>
     </xsd:simpleType>
+</xsd:attribute>
 
-    <xsd:complexType name="pamiec">
-        <xsd:simpleContent>
-            <xsd:extension base="xsd:nonNegativeInteger">
-                <xsd:attribute name="ilosc" type="iloscPamieci"/>
-            </xsd:extension>
-        </xsd:simpleContent>
-    </xsd:complexType>
 
-    <xsd:simpleType name="iloscPamieci">
+<xsd:attribute name="ilosc">
+    <xsd:simpleType>
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="GB"/>
             <xsd:enumeration value="TB"/>
@@ -145,23 +160,149 @@
             <xsd:enumeration value="kb"/>
         </xsd:restriction>
     </xsd:simpleType>
+</xsd:attribute>
 
 
-    <xsd:complexType name="zakupiony">
-        <xsd:attribute name="idref"/>
-    </xsd:complexType>
 
-    <xsd:simpleType name="idref">
-        <xsd:restriction base="xsd:string">
-            <xsd:pattern value="[a-z]{2}[a-z]*[a-z]*[0-9]+"></xsd:pattern>
-        </xsd:restriction>
-    </xsd:simpleType>
 
-    <xsd:simpleType name="nrTelefonu">
-        <xsd:restriction base="xsd:string">
-            <xsd:minLength value="9"/>
-            <xsd:maxLength value="9"/>
-        </xsd:restriction>
-    </xsd:simpleType>
+
+<!-- definition of complex elements -->
+    <xsd:element name="sklepKomputerowy">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="produkty" minOccurs="1" maxOccurs="1"/>
+                <xsd:element ref="zamowienia" minOccurs="1" maxOccurs="1"/>
+            </xsd:sequence>
+        </xsd:complexType>
+        <xsd:key name="produkty-key">
+            <xsd:selector xpath="./produkty/*"/>
+            <xsd:field xpath="./@idProduktu"/>
+        </xsd:key>
+        <xsd:keyref name="produktyRef" refer="produkty-key">
+            <xsd:selector xpath="zamowienia/zamowienie"/>
+            <xsd:field xpath="idZakupionego"/>
+        </xsd:keyref>
+    </xsd:element>
+
+    <xsd:element name="produkty">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="procesor" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="kartaGraficzna" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="twardyDysk" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="procesor">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="producent" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="model" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="specyfikacje" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="cena" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+            <xsd:attribute name="idProduktu" use="required" type="xsd:NCName"/>
+            <xsd:attribute name="przeznaczenie" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="kartaGraficzna">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="producent" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="model" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="specyfikacje" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="cena" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+            <xsd:attribute name="idProduktu" use="required" />
+            <xsd:attribute name="przeznaczenie" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="twardyDysk">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="producent" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="model" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="specyfikacje" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="cena" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+            <xsd:attribute name="idProduktu" use="required" />
+            <xsd:attribute name="przeznaczenie" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="specyfikacje">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="czestotliwosc" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="liczbaRdzeni" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="pamiec" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="format" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="zamowienia">
+		<xsd:complexType>
+			<xsd:sequence>
+                <xsd:element ref="zamowienie" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="zamowienie">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="idZakupionego" minOccurs="1" maxOccurs="unbounded"/>
+                <xsd:element ref="daneOsobowe" minOccurs="1" maxOccurs="1"/>
+			</xsd:sequence>
+            <xsd:attribute name="idZamowienia"/>
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="daneOsobowe">
+		<xsd:complexType>
+			<xsd:sequence>
+                <xsd:element ref="imie"/>
+                <xsd:element ref="nazwisko"/>
+                <xsd:element ref="nrTelefonu"/>
+                <xsd:element ref="miasto"/>
+                <xsd:element ref="ulica"/>
+                <xsd:element ref="numerDomu"/>
+                </xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="cena">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:decimal">
+                    <xsd:attribute name="waluta" type="xsd:string" />
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="czestotliwosc">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:string">
+                    <xsd:attribute name="rodzaj" type="xsd:string" />
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="pamiec">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:integer">
+                    <xsd:attribute name="ilosc" type="xsd:string" />
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
 
 </xsd:schema>

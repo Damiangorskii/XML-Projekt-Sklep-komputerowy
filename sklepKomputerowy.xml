@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sklepKomputerowy>
    
-   
     <produkty>
 
         <procesor idProduktu="proc01" przeznaczenie="komputer stacjonarny">
@@ -59,8 +58,8 @@
             <producent>MSI</producent>
             <model>Radeon 570</model>
             <specyfikacje>
-                <pamiec ilosc="GB">4</pamiec>
                 <czestotliwosc rodzaj="MHz">7000</czestotliwosc>
+                <pamiec ilosc="GB">4</pamiec>
             </specyfikacje>
             <cena waluta="PLN">799</cena>
         </kartaGraficzna>
@@ -69,8 +68,8 @@
             <producent>Gigabyte</producent>
             <model>Radeon RX 5700 XT</model>
             <specyfikacje>
-                <pamiec ilosc="GB">8</pamiec>
                 <czestotliwosc rodzaj="MHz">14000</czestotliwosc>
+                <pamiec ilosc="GB">8</pamiec>
             </specyfikacje>
             <cena waluta="PLN">2119</cena>
         </kartaGraficzna>
@@ -79,8 +78,8 @@
             <producent>ASUS</producent>
             <model>Dual GeForce RTX 2070</model>
             <specyfikacje>
-                <pamiec ilosc="GB">8</pamiec>
                 <czestotliwosc rodzaj="MHz">14000</czestotliwosc>
+                <pamiec ilosc="GB">8</pamiec>
             </specyfikacje>
             <cena waluta="PLN">1400</cena>
         </kartaGraficzna>
@@ -89,8 +88,8 @@
             <producent>MSI</producent>
             <model>GeForce RTX 2080</model>
             <specyfikacje>
-                <pamiec ilosc="GB">8</pamiec>
                 <czestotliwosc rodzaj="MHz">15500</czestotliwosc>
+                <pamiec ilosc="GB">8</pamiec>
             </specyfikacje>
             <cena waluta="PLN">2600</cena>
         </kartaGraficzna>
@@ -99,8 +98,8 @@
             <producent>Gigabyte</producent>
             <model>GeForce RTX 2080 Ti</model>
             <specyfikacje>
-                <pamiec ilosc="GB">11</pamiec>
                 <czestotliwosc rodzaj="MHz">14000</czestotliwosc>
+                <pamiec ilosc="GB">11</pamiec>
             </specyfikacje>
             <cena waluta="PLN">6090</cena>
         </kartaGraficzna>
@@ -156,14 +155,14 @@
             </specyfikacje>
             <cena waluta="PLN">376</cena>
         </twardyDysk>
+
     </produkty>
 
 
 
     <zamowienia>
          <zamowienie idZamowienia="1">
-            <zakupiony idref="proc03"/>
-            <zakupiony idref="kgr08"/>
+            <idZakupionego>proc05</idZakupionego>
             <daneOsobowe>
                 <imie>Damian</imie>
                 <nazwisko>Górski</nazwisko>
@@ -175,8 +174,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="2">
-            <zakupiony idref="proc02"/>
-            <zakupiony idref="kgr09"/>
+            <idZakupionego>kgr07</idZakupionego>
             <daneOsobowe>
                 <imie>Bartosz</imie>
                 <nazwisko>Kaminski</nazwisko>
@@ -188,9 +186,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="3">
-            <zakupiony idref="proc01"/>
-            <zakupiony idref="td12"/>
-            <zakupiony idref="td13"/>
+            <idZakupionego>proc01</idZakupionego>
             <daneOsobowe>
                 <imie>Mikolaj</imie>
                 <nazwisko>Narutowicz</nazwisko>
@@ -202,7 +198,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="4">
-            <zakupiony idref="proc05"/>
+            <idZakupionego>proc05</idZakupionego>
             <daneOsobowe>
                 <imie>Tomasz</imie>
                 <nazwisko>Bartosiewicz</nazwisko>
@@ -214,9 +210,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="5">
-            <zakupiony idref="kgr10"/>
-            <zakupiony idref="td15"/>
-            <zakupiony idref="proc02"/>
+            <idZakupionego>kgr10</idZakupionego>
             <daneOsobowe>
                 <imie>Marcin</imie>
                 <nazwisko>Malysz</nazwisko>
