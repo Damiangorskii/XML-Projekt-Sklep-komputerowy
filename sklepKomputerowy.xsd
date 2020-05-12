@@ -202,8 +202,8 @@
                 <xsd:element ref="specyfikacje" minOccurs="0" maxOccurs="1"/>
                 <xsd:element ref="cena" minOccurs="0" maxOccurs="1"/>
 			</xsd:sequence>
-            <xsd:attribute name="idProduktu" use="required" type="xsd:NCName"/>
-            <xsd:attribute name="przeznaczenie" use="required" />
+            <xsd:attribute ref="idProduktu" use="required"/>
+            <xsd:attribute ref="przeznaczenie" use="required" />
 		</xsd:complexType>
 	</xsd:element>
 
@@ -215,8 +215,8 @@
                 <xsd:element ref="specyfikacje" minOccurs="0" maxOccurs="1"/>
                 <xsd:element ref="cena" minOccurs="0" maxOccurs="1"/>
 			</xsd:sequence>
-            <xsd:attribute name="idProduktu" use="required" />
-            <xsd:attribute name="przeznaczenie" use="required" />
+            <xsd:attribute ref="idProduktu" use="required"/>
+            <xsd:attribute ref="przeznaczenie" use="required" />
 		</xsd:complexType>
 	</xsd:element>
 
@@ -228,8 +228,8 @@
                 <xsd:element ref="specyfikacje" minOccurs="0" maxOccurs="1"/>
                 <xsd:element ref="cena" minOccurs="0" maxOccurs="1"/>
 			</xsd:sequence>
-            <xsd:attribute name="idProduktu" use="required" />
-            <xsd:attribute name="przeznaczenie" use="required" />
+            <xsd:attribute ref="idProduktu" use="required"/>
+            <xsd:attribute ref="przeznaczenie" use="required"/>
 		</xsd:complexType>
 	</xsd:element>
 
@@ -258,7 +258,7 @@
 				<xsd:element ref="idZakupionego" minOccurs="1" maxOccurs="unbounded"/>
                 <xsd:element ref="daneOsobowe" minOccurs="1" maxOccurs="1"/>
 			</xsd:sequence>
-            <xsd:attribute name="idZamowienia"/>
+            <xsd:attribute ref="idZamowienia"/>
 		</xsd:complexType>
 	</xsd:element>
 
