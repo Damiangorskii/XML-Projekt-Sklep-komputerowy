@@ -1,0 +1,44 @@
+<!ELEMENT sklepKomputerowy (produkty, zamowienia)>
+<!ELEMENT produkty (procesor+, kartaGraficzna+, twardyDysk+)>
+
+<!ELEMENT procesor (producent, model, specyfikacje, cena)>
+<!ATTLIST procesor idProduktu ID #REQUIRED>
+<!ATTLIST procesor przeznaczenie CDATA #REQUIRED>
+
+<!ELEMENT kartaGraficzna (producent, model, specyfikacje, cena)>
+<!ATTLIST kartaGraficzna idProduktu ID #REQUIRED>
+<!ATTLIST kartaGraficzna przeznaczenie CDATA #REQUIRED>
+
+<!ELEMENT twardyDysk (producent, model, specyfikacje, cena)>
+<!ATTLIST twardyDysk idProduktu ID #REQUIRED>
+<!ATTLIST twardyDysk przeznaczenie CDATA #REQUIRED>
+
+<!ELEMENT specyfikacje (czestotliwosc, liczbaRdzeni?, pamiec?, format?)>
+
+<!ELEMENT czestotliwosc (#PCDATA)>
+<!ATTLIST czestotliwosc rodzaj CDATA #REQUIRED>
+
+<!ELEMENT pamiec (#PCDATA)>
+<!ATTLIST pamiec ilosc CDATA #REQUIRED>
+
+<!ELEMENT liczbaRdzeni (#PCDATA)>
+<!ELEMENT format (#PCDATA)>
+
+<!ELEMENT cena (#PCDATA)>
+<!ATTLIST cena waluta CDATA #REQUIRED>
+
+<!ELEMENT zamowienia (zamowienie+)>
+
+<!ELEMENT zamowienie (idZakupionego, daneOsobowe)>
+<!ATTLIST zamowienie idZamowienia ID #REQUIRED>
+
+<!ELEMENT idZakupionego (#PCDATA)>
+
+<!ELEMENT daneOsobowe (imie, nazwisko, nrTelefonu, miasto, ulica, numerDomu)>
+
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT nrTelefonu (#PCDATA)>
+<!ELEMENT miasto (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT numerDomu (#PCDATA)>
