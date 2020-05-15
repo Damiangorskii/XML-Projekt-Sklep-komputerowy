@@ -30,7 +30,7 @@
 <!ELEMENT zamowienia (zamowienie+)>
 
 <!ELEMENT zamowienie (idZakupionego, daneOsobowe)>
-<!ATTLIST zamowienie idZamowienia ID #REQUIRED>
+<!ATTLIST zamowienie idZamowienia IDREF #REQUIRED>
 
 <!ELEMENT idZakupionego (#PCDATA)>
 
