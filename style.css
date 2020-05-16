@@ -1,0 +1,71 @@
+body {
+    background-color: #3d3c39;
+    font-family: 'Andale Mono', monospace;
+}
+
+.kontenerGlowny {
+    background-color: #9b9489;    
+    padding: 2%;
+    margin: auto;
+    width: 80vw;
+}
+
+#tytul {
+    font-size: 300%;
+    text-align: center;
+}
+
+.temat{
+    background-color: #ffffff;
+    padding: 2%;
+    text-align: center;
+}
+
+.tytul-produktu {
+    background-color: #ff0000;
+    padding: 2%;
+    text-align: center;
+}
+
+.pojedynczy-produkt {
+    width: 50%;
+    background-color: #36312b4d;
+    padding: 2%;
+    margin-left: 25%;
+    text-align: center;
+    transition: 0.3s;
+}
+.producent-model {
+    background-color: #c0c0c0;
+}
+.specyfikacje {
+    background-color: #c0c0c0;
+}
+.cena {
+    background-color: #ecea7a;
+}
+
+.pojedynczy-produkt:hover, .zamowienie-kontener:hover {
+    box-shadow: 2px 13px 24px 2px rgba(255, 0, 0, 0.75);
+}
+
+
+
+.zamowienie-kontener {
+    background-color: #acaaaa;
+    padding: 2%;
+    box-shadow: 2px 13px 34px -7px rgba(0,0,0,0.75);
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.numer-zamowienia{
+    background-color: #f0dc82;
+}
+
+.zamowiony-przedmiot{
+    background-color: #f0dc82;
+}
+.daneOsobowe{
+    background-color: #f0dc82;
+}
