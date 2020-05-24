@@ -13,7 +13,7 @@
 <!ATTLIST twardyDysk idProduktu ID #REQUIRED>
 <!ATTLIST twardyDysk przeznaczenie CDATA #REQUIRED>
 
-<!ELEMENT specyfikacje (czestotliwosc, liczbaRdzeni?, pamiec?, format?)>
+<!ELEMENT specyfikacje (czestotliwosc?, liczbaRdzeni?, pamiec?, format?)>
 
 <!ELEMENT czestotliwosc (#PCDATA)>
 <!ATTLIST czestotliwosc rodzaj CDATA #REQUIRED>
@@ -29,10 +29,11 @@
 
 <!ELEMENT zamowienia (zamowienie+)>
 
-<!ELEMENT zamowienie (idZakupionego, daneOsobowe)>
-<!ATTLIST zamowienie idZamowienia IDREF #REQUIRED>
+<!ELEMENT zamowienie (idZakupionego+, daneOsobowe)>
+<!ATTLIST zamowienie idZamowienia CDATA #REQUIRED>
 
-<!ELEMENT idZakupionego (#PCDATA)>
+<!ELEMENT idZakupionego  EMPTY>
+<!ATTLIST idZakupionego idref IDREF #REQUIRED>
 
 <!ELEMENT daneOsobowe (imie, nazwisko, nrTelefonu, miasto, ulica, numerDomu)>
 
@@ -42,3 +43,5 @@
 <!ELEMENT miasto (#PCDATA)>
 <!ELEMENT ulica (#PCDATA)>
 <!ELEMENT numerDomu (#PCDATA)>
+<!ELEMENT producent (#PCDATA)>
+<!ELEMENT model (#PCDATA)>

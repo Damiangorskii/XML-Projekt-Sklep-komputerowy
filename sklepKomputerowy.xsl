@@ -104,7 +104,7 @@
             <p>numer zamowienia: <xsl:value-of select="./@idZamowienia"/></p>
         </div>
         <div class="zamowiony-przedmiot">
-            <p>id zamowionego przedmiotu: <xsl:value-of select="./idZakupionego"/></p>
+            <xsl:apply-templates select="idZakupionego"/>
         </div>
         <div class="daneOsobowe">
             <p>imie: <xsl:value-of select="./daneOsobowe/imie"/></p>
@@ -115,5 +115,11 @@
             <p>numer domu: <xsl:value-of select="./daneOsobowe/numerDomu"/></p>
         </div>
     </div>
+</xsl:template>
+
+<xsl:template match="idZakupionego">
+        <xsl:for-each select="./@idref">
+            <p>id zamowionego przedmiotu: <xsl:value-of select="."/></p>
+        </xsl:for-each>
 </xsl:template>
 </xsl:stylesheet>

@@ -163,7 +163,8 @@
 
     <zamowienia>
          <zamowienie idZamowienia="1">
-            <idZakupionego>proc05</idZakupionego>
+            <idZakupionego idref="proc05"/>
+            <idZakupionego idref="proc01"/>
             <daneOsobowe>
                 <imie>Damian</imie>
                 <nazwisko>Górski</nazwisko>
@@ -175,7 +176,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="2">
-            <idZakupionego>kgr07</idZakupionego>
+            <idZakupionego idref="kgr07"/>
             <daneOsobowe>
                 <imie>Bartosz</imie>
                 <nazwisko>Kaminski</nazwisko>
@@ -187,7 +188,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="3">
-            <idZakupionego>proc01</idZakupionego>
+            <idZakupionego idref="proc01"/>
             <daneOsobowe>
                 <imie>Mikolaj</imie>
                 <nazwisko>Narutowicz</nazwisko>
@@ -199,7 +200,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="4">
-            <idZakupionego>proc05</idZakupionego>
+            <idZakupionego idref="proc05"/>
             <daneOsobowe>
                 <imie>Tomasz</imie>
                 <nazwisko>Bartosiewicz</nazwisko>
@@ -211,7 +212,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="5">
-            <idZakupionego>kgr10</idZakupionego>
+            <idZakupionego idref="kgr10"/>
             <daneOsobowe>
                 <imie>Marcin</imie>
                 <nazwisko>Malysz</nazwisko>
