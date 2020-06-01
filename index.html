@@ -8,147 +8,293 @@
          <h1 id="tytul">Sklep Komputerowy</h1>
          <div>
             <h2 class="temat">Produkty</h2>
+            <div class="search-boxes-wrapper">
+               <h4>Filtry</h4>
+               <div class="filtr-pole-tekstowe">producent: <input type="text"
+                         id="szukaj-producent"
+                         placeholder="Wpisz nazwe producenta"
+                         title="szukaj w produktach"/>
+               </div>
+               <div class="filtr-pole-tekstowe">model: <input type="text"
+                         id="szukaj-model"
+                         placeholder="Wpisz nazwe modelu"
+                         title="szukaj w produktach"/>
+               </div>
+               <div class="filtr-pole-tekstowe">cena: <input type="text"
+                         id="szukaj-cena"
+                         placeholder="Wpisz cene"
+                         title="szukaj w produktach"/>
+               </div>
+               <div class="szukaj-button-div">
+                  <button type="button" class="szukaj-button" id="wyczysc-filtr-button">Wyczysc</button>
+               </div>
+            </div>
             <h3 class="tytul-produktu">Procesory</h3>
-            <div class="produkty">
+            <div class="dodaj-produkt-button">
+               <button class="dodaj-button" id="dodaj-producent">
+                  <img src="https://img.icons8.com/cute-clipart/64/000000/add.png"/>
+               </button>
+            </div>
+            <div class="produkty" id="procesory">
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: AMD</p>
-                     <p>model: Ryzen 5 2400G</p>
+            producent: <p class="producent-w-bazie">AMD</p>
+            model: <p class="model-w-bazie">Ryzen 5 2400G</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 4</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 699PLN</p>
+            cena: <p class="cena-w-bazie">699PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Intel</p>
-                     <p>model: i5-9400F</p>
+            producent: <p class="producent-w-bazie">Intel</p>
+            model: <p class="model-w-bazie">i5-9400F</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 2.9GHz</p>
                      <p>liczba rdzeni: 6</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 670PLN</p>
+            cena: <p class="cena-w-bazie">670PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: AMD</p>
-                     <p>model: Ryzen 5 3600</p>
+            producent: <p class="producent-w-bazie">AMD</p>
+            model: <p class="model-w-bazie">Ryzen 5 3600</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 6</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 799PLN</p>
+            cena: <p class="cena-w-bazie">799PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Intel</p>
-                     <p>model: i7-9700K</p>
+            producent: <p class="producent-w-bazie">Intel</p>
+            model: <p class="model-w-bazie">i7-9700K</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 8</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 950PLN</p>
+            cena: <p class="cena-w-bazie">950PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Qualcomm</p>
-                     <p>model: Snapdragon 865</p>
+            producent: <p class="producent-w-bazie">Qualcomm</p>
+            model: <p class="model-w-bazie">Snapdragon 865</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 2.84GHz</p>
                      <p>liczba rdzeni: 8</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 579USD</p>
+            cena: <p class="cena-w-bazie">579USD</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: MSI</p>
-                     <p>model: Radeon 570</p>
+            producent: <p class="producent-w-bazie">MSI</p>
+            model: <p class="model-w-bazie">Radeon 570</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 7000MHz</p>
                      <p>pamiec: 4GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 799PLN</p>
+            cena: <p class="cena-w-bazie">799PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Gigabyte</p>
-                     <p>model: Radeon RX 5700 XT</p>
+            producent: <p class="producent-w-bazie">Gigabyte</p>
+            model: <p class="model-w-bazie">Radeon RX 5700 XT</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 2119PLN</p>
+            cena: <p class="cena-w-bazie">2119PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: ASUS</p>
-                     <p>model: Dual GeForce RTX 2070</p>
+            producent: <p class="producent-w-bazie">ASUS</p>
+            model: <p class="model-w-bazie">Dual GeForce RTX 2070</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 1400PLN</p>
+            cena: <p class="cena-w-bazie">1400PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: MSI</p>
-                     <p>model: GeForce RTX 2080</p>
+            producent: <p class="producent-w-bazie">MSI</p>
+            model: <p class="model-w-bazie">GeForce RTX 2080</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 15500MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 2600PLN</p>
+            cena: <p class="cena-w-bazie">2600PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Gigabyte</p>
-                     <p>model: GeForce RTX 2080 Ti</p>
+            producent: <p class="producent-w-bazie">Gigabyte</p>
+            model: <p class="model-w-bazie">GeForce RTX 2080 Ti</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 11GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 6090PLN</p>
+            cena: <p class="cena-w-bazie">6090PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
@@ -156,216 +302,401 @@
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: WD</p>
-                     <p>model: Red</p>
+            producent: <p class="producent-w-bazie">WD</p>
+            model: <p class="model-w-bazie">Red</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 6TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 545PLN</p>
+            cena: <p class="cena-w-bazie">545PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Toshiba</p>
-                     <p>model: P300</p>
+            producent: <p class="producent-w-bazie">Toshiba</p>
+            model: <p class="model-w-bazie">P300</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 1TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 189PLN</p>
+            cena: <p class="cena-w-bazie">189PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Seagate</p>
-                     <p>model: BarraCuda</p>
+            producent: <p class="producent-w-bazie">Seagate</p>
+            model: <p class="model-w-bazie">BarraCuda</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 1TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 200PLN</p>
+            cena: <p class="cena-w-bazie">200PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: PNY</p>
-                     <p>model: CS900</p>
+            producent: <p class="producent-w-bazie">PNY</p>
+            model: <p class="model-w-bazie">CS900</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 960GB</p>
                      <p>format: 2.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 456PLN</p>
+            cena: <p class="cena-w-bazie">456PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Samsung</p>
-                     <p>model: 860 EVO</p>
+            producent: <p class="producent-w-bazie">Samsung</p>
+            model: <p class="model-w-bazie">860 EVO</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 500GB</p>
                      <p>format: 2.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 376PLN</p>
+            cena: <p class="cena-w-bazie">376PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
             </div>
             <h3 class="tytul-produktu">Karty Graficzne</h3>
+            <div class="dodaj-produkt-button">
+               <button class="dodaj-button" id="dodaj-karteGraficzna">
+                  <img src="https://img.icons8.com/cute-clipart/64/000000/add.png"/>
+               </button>
+            </div>
             <div class="produkty">
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: AMD</p>
-                     <p>model: Ryzen 5 2400G</p>
+            producent: <p class="producent-w-bazie">AMD</p>
+            model: <p class="model-w-bazie">Ryzen 5 2400G</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 4</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 699PLN</p>
+            cena: <p class="cena-w-bazie">699PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Intel</p>
-                     <p>model: i5-9400F</p>
+            producent: <p class="producent-w-bazie">Intel</p>
+            model: <p class="model-w-bazie">i5-9400F</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 2.9GHz</p>
                      <p>liczba rdzeni: 6</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 670PLN</p>
+            cena: <p class="cena-w-bazie">670PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: AMD</p>
-                     <p>model: Ryzen 5 3600</p>
+            producent: <p class="producent-w-bazie">AMD</p>
+            model: <p class="model-w-bazie">Ryzen 5 3600</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 6</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 799PLN</p>
+            cena: <p class="cena-w-bazie">799PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Intel</p>
-                     <p>model: i7-9700K</p>
+            producent: <p class="producent-w-bazie">Intel</p>
+            model: <p class="model-w-bazie">i7-9700K</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 8</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 950PLN</p>
+            cena: <p class="cena-w-bazie">950PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Qualcomm</p>
-                     <p>model: Snapdragon 865</p>
+            producent: <p class="producent-w-bazie">Qualcomm</p>
+            model: <p class="model-w-bazie">Snapdragon 865</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 2.84GHz</p>
                      <p>liczba rdzeni: 8</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 579USD</p>
+            cena: <p class="cena-w-bazie">579USD</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: MSI</p>
-                     <p>model: Radeon 570</p>
+            producent: <p class="producent-w-bazie">MSI</p>
+            model: <p class="model-w-bazie">Radeon 570</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 7000MHz</p>
                      <p>pamiec: 4GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 799PLN</p>
+            cena: <p class="cena-w-bazie">799PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Gigabyte</p>
-                     <p>model: Radeon RX 5700 XT</p>
+            producent: <p class="producent-w-bazie">Gigabyte</p>
+            model: <p class="model-w-bazie">Radeon RX 5700 XT</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 2119PLN</p>
+            cena: <p class="cena-w-bazie">2119PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: ASUS</p>
-                     <p>model: Dual GeForce RTX 2070</p>
+            producent: <p class="producent-w-bazie">ASUS</p>
+            model: <p class="model-w-bazie">Dual GeForce RTX 2070</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 1400PLN</p>
+            cena: <p class="cena-w-bazie">1400PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: MSI</p>
-                     <p>model: GeForce RTX 2080</p>
+            producent: <p class="producent-w-bazie">MSI</p>
+            model: <p class="model-w-bazie">GeForce RTX 2080</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 15500MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 2600PLN</p>
+            cena: <p class="cena-w-bazie">2600PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Gigabyte</p>
-                     <p>model: GeForce RTX 2080 Ti</p>
+            producent: <p class="producent-w-bazie">Gigabyte</p>
+            model: <p class="model-w-bazie">GeForce RTX 2080 Ti</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 11GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 6090PLN</p>
+            cena: <p class="cena-w-bazie">6090PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
@@ -373,216 +704,401 @@
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: WD</p>
-                     <p>model: Red</p>
+            producent: <p class="producent-w-bazie">WD</p>
+            model: <p class="model-w-bazie">Red</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 6TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 545PLN</p>
+            cena: <p class="cena-w-bazie">545PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Toshiba</p>
-                     <p>model: P300</p>
+            producent: <p class="producent-w-bazie">Toshiba</p>
+            model: <p class="model-w-bazie">P300</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 1TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 189PLN</p>
+            cena: <p class="cena-w-bazie">189PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Seagate</p>
-                     <p>model: BarraCuda</p>
+            producent: <p class="producent-w-bazie">Seagate</p>
+            model: <p class="model-w-bazie">BarraCuda</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 1TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 200PLN</p>
+            cena: <p class="cena-w-bazie">200PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: PNY</p>
-                     <p>model: CS900</p>
+            producent: <p class="producent-w-bazie">PNY</p>
+            model: <p class="model-w-bazie">CS900</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 960GB</p>
                      <p>format: 2.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 456PLN</p>
+            cena: <p class="cena-w-bazie">456PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Samsung</p>
-                     <p>model: 860 EVO</p>
+            producent: <p class="producent-w-bazie">Samsung</p>
+            model: <p class="model-w-bazie">860 EVO</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 500GB</p>
                      <p>format: 2.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 376PLN</p>
+            cena: <p class="cena-w-bazie">376PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
             </div>
             <h3 class="tytul-produktu">Twarde Dyski</h3>
+            <div class="dodaj-produkt-button">
+               <button class="dodaj-button" id="dodaj-twardyDysk">
+                  <img src="https://img.icons8.com/cute-clipart/64/000000/add.png"/>
+               </button>
+            </div>
             <div class="produkty">
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: AMD</p>
-                     <p>model: Ryzen 5 2400G</p>
+            producent: <p class="producent-w-bazie">AMD</p>
+            model: <p class="model-w-bazie">Ryzen 5 2400G</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 4</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 699PLN</p>
+            cena: <p class="cena-w-bazie">699PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Intel</p>
-                     <p>model: i5-9400F</p>
+            producent: <p class="producent-w-bazie">Intel</p>
+            model: <p class="model-w-bazie">i5-9400F</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 2.9GHz</p>
                      <p>liczba rdzeni: 6</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 670PLN</p>
+            cena: <p class="cena-w-bazie">670PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: AMD</p>
-                     <p>model: Ryzen 5 3600</p>
+            producent: <p class="producent-w-bazie">AMD</p>
+            model: <p class="model-w-bazie">Ryzen 5 3600</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 6</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 799PLN</p>
+            cena: <p class="cena-w-bazie">799PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Intel</p>
-                     <p>model: i7-9700K</p>
+            producent: <p class="producent-w-bazie">Intel</p>
+            model: <p class="model-w-bazie">i7-9700K</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 3.6GHz</p>
                      <p>liczba rdzeni: 8</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 950PLN</p>
+            cena: <p class="cena-w-bazie">950PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Qualcomm</p>
-                     <p>model: Snapdragon 865</p>
+            producent: <p class="producent-w-bazie">Qualcomm</p>
+            model: <p class="model-w-bazie">Snapdragon 865</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 2.84GHz</p>
                      <p>liczba rdzeni: 8</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 579USD</p>
+            cena: <p class="cena-w-bazie">579USD</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-procesor">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: MSI</p>
-                     <p>model: Radeon 570</p>
+            producent: <p class="producent-w-bazie">MSI</p>
+            model: <p class="model-w-bazie">Radeon 570</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 7000MHz</p>
                      <p>pamiec: 4GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 799PLN</p>
+            cena: <p class="cena-w-bazie">799PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Gigabyte</p>
-                     <p>model: Radeon RX 5700 XT</p>
+            producent: <p class="producent-w-bazie">Gigabyte</p>
+            model: <p class="model-w-bazie">Radeon RX 5700 XT</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 2119PLN</p>
+            cena: <p class="cena-w-bazie">2119PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: ASUS</p>
-                     <p>model: Dual GeForce RTX 2070</p>
+            producent: <p class="producent-w-bazie">ASUS</p>
+            model: <p class="model-w-bazie">Dual GeForce RTX 2070</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 1400PLN</p>
+            cena: <p class="cena-w-bazie">1400PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: MSI</p>
-                     <p>model: GeForce RTX 2080</p>
+            producent: <p class="producent-w-bazie">MSI</p>
+            model: <p class="model-w-bazie">GeForce RTX 2080</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 15500MHz</p>
                      <p>pamiec: 8GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 2600PLN</p>
+            cena: <p class="cena-w-bazie">2600PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Gigabyte</p>
-                     <p>model: GeForce RTX 2080 Ti</p>
+            producent: <p class="producent-w-bazie">Gigabyte</p>
+            model: <p class="model-w-bazie">GeForce RTX 2080 Ti</p>
                   </div>
                   <div class="specyfikacje">
                      <p>czestotliwosc: 14000MHz</p>
                      <p>pamiec: 11GB</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 6090PLN</p>
+            cena: <p class="cena-w-bazie">6090PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-kartaGraficzna">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
@@ -590,71 +1106,131 @@
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: WD</p>
-                     <p>model: Red</p>
+            producent: <p class="producent-w-bazie">WD</p>
+            model: <p class="model-w-bazie">Red</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 6TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 545PLN</p>
+            cena: <p class="cena-w-bazie">545PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Toshiba</p>
-                     <p>model: P300</p>
+            producent: <p class="producent-w-bazie">Toshiba</p>
+            model: <p class="model-w-bazie">P300</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 1TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 189PLN</p>
+            cena: <p class="cena-w-bazie">189PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Seagate</p>
-                     <p>model: BarraCuda</p>
+            producent: <p class="producent-w-bazie">Seagate</p>
+            model: <p class="model-w-bazie">BarraCuda</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 1TB</p>
                      <p>format: 3.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 200PLN</p>
+            cena: <p class="cena-w-bazie">200PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: PNY</p>
-                     <p>model: CS900</p>
+            producent: <p class="producent-w-bazie">PNY</p>
+            model: <p class="model-w-bazie">CS900</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 960GB</p>
                      <p>format: 2.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 456PLN</p>
+            cena: <p class="cena-w-bazie">456PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
                <div class="pojedynczy-produkt">
                   <div class="producent-model">
-                     <p>producent: Samsung</p>
-                     <p>model: 860 EVO</p>
+            producent: <p class="producent-w-bazie">Samsung</p>
+            model: <p class="model-w-bazie">860 EVO</p>
                   </div>
                   <div class="specyfikacje">
                      <p>pamiec: 500GB</p>
                      <p>format: 2.5</p>
                   </div>
                   <div class="cena">
-                     <p>cena: 376PLN</p>
+            cena: <p class="cena-w-bazie">376PLN</p>
+                  </div>
+                  <div class="product-buttons">
+                     <p class="img-paragraph">
+                        <button class="product-button update-button update-button-twardyDysk">
+                           <img src="https://img.icons8.com/fluent/48/000000/edit.png"/>
+                        </button>
+                     </p>
+                     <p class="img-paragraph">
+                        <button class="product-button delete-button">
+                           <img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>
+                        </button>
+                     </p>
                   </div>
                </div>
 
@@ -753,5 +1329,11 @@
             </div>
          </div>
       </div>
+      <a href="https://icons8.com/icon/FLAhbNWR0src/add">Add icon by Icons8</a>
+      <a href="https://icons8.com/icon/OWRPl8fxkRvG/edit">Edit icon by Icons8</a>
+      <a href="https://icons8.com/icon/OZuepOQd0omj/delete">Delete icon by Icons8</a>
+      <script src="scripts.js">
+         <br/>
+      </script>
    </body>
 </html>
