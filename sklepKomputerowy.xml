@@ -4,6 +4,8 @@
    
     <produkty>
 
+    <procesory>
+
         <procesor idProduktu="proc01" przeznaczenie="komputer stacjonarny">
             <producent>AMD</producent>
             <model>Ryzen 5 2400G</model>
@@ -53,7 +55,9 @@
             </specyfikacje>
             <cena waluta="USD">579</cena>
         </procesor>
+    </procesory>
 
+    <kartyGraficzne>
 
         <kartaGraficzna idProduktu="kgr06" przeznaczenie="komputer stacjonarny">
             <producent>MSI</producent>
@@ -105,7 +109,9 @@
             <cena waluta="PLN">6090</cena>
         </kartaGraficzna>
 
+    </kartyGraficzne>
 
+    <twardeDyski>
 
         <twardyDysk idProduktu="td11" przeznaczenie="komputer stacjonarny">
             <producent>WD</producent>
@@ -156,8 +162,10 @@
             </specyfikacje>
             <cena waluta="PLN">376</cena>
         </twardyDysk>
+    </twardeDyski>
 
     </produkty>
+
 
 
 
@@ -188,7 +196,7 @@
          </zamowienie>
 
          <zamowienie idZamowienia="3">
-            <idZakupionego idref="proc01"/>
+            <idZakupionego idref="proc05"/>
             <daneOsobowe>
                 <imie>Mikolaj</imie>
                 <nazwisko>Narutowicz</nazwisko>

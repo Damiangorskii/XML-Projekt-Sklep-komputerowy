@@ -1,5 +1,11 @@
 <!ELEMENT sklepKomputerowy (produkty, zamowienia)>
-<!ELEMENT produkty (procesor+, kartaGraficzna+, twardyDysk+)>
+<!ELEMENT produkty (procesory, kartyGraficzne, twardeDyski)>
+
+<!ELEMENT procesory (procesor+)>
+
+<!ELEMENT kartyGraficzne (kartaGraficzna+)>
+
+<!ELEMENT twardeDyski (twardyDysk+)>
 
 <!ELEMENT procesor (producent, model, specyfikacje, cena)>
 <!ATTLIST procesor idProduktu ID #REQUIRED>

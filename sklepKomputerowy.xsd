@@ -175,11 +175,11 @@
                 <xsd:element ref="zamowienia" minOccurs="1" maxOccurs="1"/>
             </xsd:sequence>
         </xsd:complexType>
-        <xsd:key name="produkty-key">
-            <xsd:selector xpath="./produkty/*"/>
+        <xsd:key name="product-key">
+            <xsd:selector xpath="./produkty/procesory/procesor | ./produkty/kartyGraficzne/kartaGraficzna | ./produkty/twardeDyski/twardyDysk"/>
             <xsd:field xpath="./@idProduktu"/>
         </xsd:key>
-        <xsd:keyref name="produktyRef" refer="produkty-key">
+        <xsd:keyref name="productRef" refer="product-key">
             <xsd:selector xpath="zamowienia/zamowienie/idZakupionego"/>
             <xsd:field xpath="@idref"/>
         </xsd:keyref>
@@ -188,9 +188,33 @@
     <xsd:element name="produkty">
 		<xsd:complexType>
 			<xsd:sequence>
+				<xsd:element ref="procesory" minOccurs="1" maxOccurs="1"/>
+                <xsd:element ref="kartyGraficzne" minOccurs="1" maxOccurs="1"/>
+                <xsd:element ref="twardeDyski" minOccurs="1" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="procesory">
+		<xsd:complexType>
+			<xsd:sequence>
 				<xsd:element ref="procesor" minOccurs="0" maxOccurs="unbounded"/>
-                <xsd:element ref="kartaGraficzna" minOccurs="0" maxOccurs="unbounded"/>
-                <xsd:element ref="twardyDysk" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="kartyGraficzne">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="kartaGraficzna" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+    <xsd:element name="twardeDyski">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="twardyDysk" minOccurs="0" maxOccurs="unbounded"/>
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>

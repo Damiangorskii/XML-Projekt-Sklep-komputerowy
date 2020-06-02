@@ -27,12 +27,12 @@
                 </div>
                 <h3 class="tytul-produktu">Procesory</h3>
                 <div class="dodaj-produkt-button">
-                    <button class="dodaj-button" id="dodaj-producent">
+                    <button class="dodaj-button" id="dodaj-procesor">
                         <img src="https://img.icons8.com/cute-clipart/64/000000/add.png"/>
                     </button>
                 </div>
                 <div class="produkty" id="procesory">
-                    <xsl:for-each select="sklepKomputerowy/produkty">
+                    <xsl:for-each select="sklepKomputerowy/produkty/procesory">
                         <xsl:apply-templates/>
                     </xsl:for-each>
                 </div>
@@ -42,8 +42,8 @@
                         <img src="https://img.icons8.com/cute-clipart/64/000000/add.png"/>
                     </button>
                 </div>
-                <div class="produkty">
-                    <xsl:for-each select="sklepKomputerowy/produkty">
+                <div class="produkty" id="kartaGraficzna">
+                    <xsl:for-each select="sklepKomputerowy/produkty/kartyGraficzne">
                         <xsl:apply-templates/>
                     </xsl:for-each>
                 </div>
@@ -53,8 +53,8 @@
                         <img src="https://img.icons8.com/cute-clipart/64/000000/add.png"/>
                     </button>
                 </div>
-                <div class="produkty">
-                    <xsl:for-each select="sklepKomputerowy/produkty">
+                <div class="produkty" id="twardyDysk">
+                    <xsl:for-each select="sklepKomputerowy/produkty/twardeDyski">
                         <xsl:apply-templates/>
                     </xsl:for-each>
                 </div>
@@ -71,7 +71,7 @@
         <a href="https://icons8.com/icon/FLAhbNWR0src/add">Add icon by Icons8</a>
         <a href="https://icons8.com/icon/OWRPl8fxkRvG/edit">Edit icon by Icons8</a>
         <a href="https://icons8.com/icon/OZuepOQd0omj/delete">Delete icon by Icons8</a>
-        <script src="scripts.js"><br/>
+        <script src="script.js"><br/>
         </script>
     </body>
 </html>
@@ -84,15 +84,15 @@
             model: <p class="model-w-bazie"><xsl:value-of select="./model"/></p>
         </div>
         <div class="specyfikacje">
-            <p>czestotliwosc: <xsl:value-of select="./specyfikacje/czestotliwosc"/><xsl:value-of select="./specyfikacje/czestotliwosc/@rodzaj"/></p>
-            <p>liczba rdzeni: <xsl:value-of select="./specyfikacje/liczbaRdzeni"/></p>
+            czestotliwosc: <p class="specyfikacje-modyfikacja1"><xsl:value-of select="./specyfikacje/czestotliwosc"/><xsl:value-of select="./specyfikacje/czestotliwosc/@rodzaj"/></p>
+            liczba rdzeni: <p class="specyfikacje-modyfikacja2"><xsl:value-of select="./specyfikacje/liczbaRdzeni"/></p>
         </div>
         <div class="cena">
             cena: <p class="cena-w-bazie"><xsl:value-of select="./cena"/><xsl:value-of select="./cena/@waluta"/></p>
         </div>
-        <div class="product-buttons">
-            <p class="img-paragraph"><button class="product-button update-button update-button-procesor"><img src="https://img.icons8.com/fluent/48/000000/edit.png"/></button></p>
-            <p class="img-paragraph"><button class="product-button delete-button"><img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/></button></p>
+        <div class="produkt-buttons">
+            <p><button class="produkt-button edytuj-button"><img src="https://img.icons8.com/fluent/48/000000/edit.png"/></button></p>
+            <p><button class="produkt-button usun-button"><img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/></button></p>
         </div>
     </div>
 </xsl:template>
@@ -104,15 +104,15 @@
             model: <p class="model-w-bazie"><xsl:value-of select="./model"/></p>
         </div>
         <div class="specyfikacje">
-            <p>czestotliwosc: <xsl:value-of select="./specyfikacje/czestotliwosc"/><xsl:value-of select="./specyfikacje/czestotliwosc/@rodzaj"/></p>
-            <p>pamiec: <xsl:value-of select="./specyfikacje/pamiec"/><xsl:value-of select="./specyfikacje/pamiec/@ilosc"/></p>
+            czestotliwosc: <p class="specyfikacje-modyfikacja1"><xsl:value-of select="./specyfikacje/czestotliwosc"/><xsl:value-of select="./specyfikacje/czestotliwosc/@rodzaj"/></p>
+            pamiec: <p class="specyfikacje-modyfikacja2"><xsl:value-of select="./specyfikacje/pamiec"/><xsl:value-of select="./specyfikacje/pamiec/@ilosc"/></p>
         </div>
         <div class="cena">
             cena: <p class="cena-w-bazie"><xsl:value-of select="./cena"/><xsl:value-of select="./cena/@waluta"/></p>
         </div>
-        <div class="product-buttons">
-            <p class="img-paragraph"><button class="product-button update-button update-button-kartaGraficzna"><img src="https://img.icons8.com/fluent/48/000000/edit.png"/></button></p>
-            <p class="img-paragraph"><button class="product-button delete-button"><img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/></button></p>
+        <div class="produkt-buttons">
+            <p><button class="produkt-button edytuj-button"><img src="https://img.icons8.com/fluent/48/000000/edit.png"/></button></p>
+            <p><button class="produkt-button usun-button"><img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/></button></p>
         </div>
     </div>
 </xsl:template>
@@ -124,15 +124,15 @@
             model: <p class="model-w-bazie"><xsl:value-of select="./model"/></p>
         </div>
         <div class="specyfikacje">
-            <p>pamiec: <xsl:value-of select="./specyfikacje/pamiec"/><xsl:value-of select="./specyfikacje/pamiec/@ilosc"/></p>
-            <p>format: <xsl:value-of select="./specyfikacje/format"/></p>
+            pamiec: <p class="specyfikacje-modyfikacja1"><xsl:value-of select="./specyfikacje/pamiec"/><xsl:value-of select="./specyfikacje/pamiec/@ilosc"/></p>
+            format: <p class="specyfikacje-modyfikacja2"><xsl:value-of select="./specyfikacje/format"/></p>
         </div>
         <div class="cena">
             cena: <p class="cena-w-bazie"><xsl:value-of select="./cena"/><xsl:value-of select="./cena/@waluta"/></p>
         </div>
-        <div class="product-buttons">
-            <p class="img-paragraph"><button class="product-button update-button update-button-twardyDysk"><img src="https://img.icons8.com/fluent/48/000000/edit.png"/></button></p>
-            <p class="img-paragraph"><button class="product-button delete-button"><img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/></button></p>
+        <div class="produkt-buttons">
+            <p><button class="produkt-button edytuj-button"><img src="https://img.icons8.com/fluent/48/000000/edit.png"/></button></p>
+            <p><button class="produkt-button usun-button"><img src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/></button></p>
         </div>
     </div>
 </xsl:template>
